@@ -3,15 +3,20 @@ var m1 = new Map();
 m1.set("rate", 4.1);
 m1.set("count", 259);
 console.log(m1);
-  	//let ratings=new Map[key,value];
- var result=new Map(Object.entries(JSON.parse(response.rating)));
- 
-	/*for (var i=0;i<response.rating.length;i++)
-	{
-		ratings=map.set(response.rating.keys[i], response.rating.values[i]);
-	}*/
-//console.log(Ratings);
+var result=new Map(Object.entries(JSON.parse(response.rating)));
 console.log(result);
-log(compareMaps(m1, result))
+function compareMaps(m1, result) {
+  if (m1.size !== result.size) {
+    return false;
+  }
+  
+  for (const [key, value] of m1.entries()) {
+    if (!result.has(key) || result.get(key) !== value) {
+      return false;
+    }
+  }
+  
+  return true;
+}
 return result;
 }

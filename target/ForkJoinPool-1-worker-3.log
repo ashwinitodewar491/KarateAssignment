@@ -1,4 +1,4 @@
-12:29:15.932 request:
+13:19:30.231 request:
 1 > POST https://fakestoreapi.com/products
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -8,24 +8,24 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/13.0.2)
 {"title":"test product","price":"13.5","description":"lorem ipsum set","image":"https://i.pravatar.cc","category":"electronic"}
 
-12:29:16.937 response time in milliseconds: 1001.61
+13:19:31.543 response time in milliseconds: 1306.75
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 7de40bcb4a3a3d35-SIN
+1 < CF-RAY: 7de455652daf89a7-SIN
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 28 Jun 2023 06:59:16 GMT
+1 < Date: Wed, 28 Jun 2023 07:49:31 GMT
 1 < Etag: W/"87-iCArUmJTAA0ty57H7R6gAg8CRR8"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fI1UqHVr2qovyjiRKWUHU7mSAUmMswN73Q7WnBTHYb%2BY5mioMPK6hHUhcUYN3EpehsD053vLQLbQ9LR9vDnbGdsBTTBDGKZ35se80OPvDP1GD2nCyh7wmRVtwXwPhwjDn4pF"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=B8uI6BmRF6f46UoIFOS9K7XjBRAb9OO9cx75NR5kQrt3rxnTCmtKj4hGaTJXU8TPZhy7jNE5%2F0mb8vz4FQM7RrL0UmWsp1zEpal9VVGRisILWrk1egRPYUoZpq92sbfYfkgG"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Transfer-Encoding: chunked
 1 < X-Powered-By: Express
 1 < alt-svc: h3=":443"; ma=86400
 {"id":21,"title":"test product","price":"13.5","description":"lorem ipsum set","image":"https://i.pravatar.cc","category":"electronic"}
 
-12:29:17.002 request:
+13:19:31.605 request:
 2 > GET https://fakestoreapi.com/products/2
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
@@ -33,17 +33,17 @@
 2 > Host: fakestoreapi.com
 2 > User-Agent: Apache-HttpClient/4.5.11 (Java/13.0.2)
 
-12:29:17.716 response time in milliseconds: 712.80
+13:19:32.320 response time in milliseconds: 712.93
 2 < 200
 2 < Access-Control-Allow-Origin: *
 2 < CF-Cache-Status: DYNAMIC
-2 < CF-RAY: 7de40bd03e154a02-SIN
+2 < CF-RAY: 7de4556a7b524957-SIN
 2 < Connection: keep-alive
 2 < Content-Type: application/json; charset=utf-8
-2 < Date: Wed, 28 Jun 2023 06:59:17 GMT
+2 < Date: Wed, 28 Jun 2023 07:49:32 GMT
 2 < Etag: W/"239-bLDSJo+O3FjSlzUr879oE3z3US8"
 2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=J6SCiJBsILsHkI8UTB1PYUlCX2dCrirSZP6D4VzDJRhzBWn%2Fqusryso1TQbMkGETrUlngVOJPs4LTBpiYSTSdbNp%2Fzxs5AVRog3whSxvshr5oYhq4J%2BlIHxqweVmUOtgRnIw"}],"group":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LjT2a9uNJveLZNy2bmUwVeLQA4xJsUD%2BK4cLni2O3kPjadUygr32Eb1TBSgICCe9KvGEvMxhIAwfTx0O8RceIx48Q7Xyc6A360mHSSchCrgbwP4d6VQs4qchiypjXlB%2F%2BDi1"}],"group":"cf-nel","max_age":604800}
 2 < Server: cloudflare
 2 < Transfer-Encoding: chunked
 2 < X-Powered-By: Express
