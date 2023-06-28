@@ -17,7 +17,8 @@ Feature: Adding product
    And headers <headers>
    When method get
    Then status 200
-   * def ratings = karate.read('classpath:src/test/java/LoopAssertion.js')(response);
+   #* def ratings = karate.read('classpath:src/test/java/LoopAssertion.js')(response);
+   Then assert karate.read('classpath:src/test/java/LoopAssertion.js')(response);
    And print ratings
   # Then assert response.rating[0].count==259
    #Then assert response.rating[1].rate=4.1
