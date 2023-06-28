@@ -1,0 +1,17 @@
+<testsuite failures="0" name="src/test/java/userDetails.feature" skipped="0" tests="1" time="2.096784">
+  <testcase classname="src.test.java.userDetails" name="Send requests with multiple payloads" time="2.096784">
+    <system-out>Given url 'https://fakestoreapi.com/' ..................................... passed
+And path 'products' ....................................................... passed
+And request {"title": "test product","price": "13.5","description": "lorem ipsum set","image": "https://i.pravatar.cc","category": "electronic"} . passed
+And headers {"Content-Type": "application/json"} .......................... passed
+When method post .......................................................... passed
+Then match response == {"id": "#number", "title": "#string", "price": "#string", "description": "#string", "image": "#string", "category": "#string"} . passed
+Then status 200 ........................................................... passed
+Then assert response.id==21 ............................................... passed
+Then assert response.title=='test product' ................................ passed
+Given url 'https://fakestoreapi.com/' ..................................... passed
+And path 'products', 2 .................................................... passed
+And headers {"Content-Type": "application/json"} .......................... passed
+When method get ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

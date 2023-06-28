@@ -1,0 +1,25 @@
+<testsuite failures="1" name="src/test/java/AddProduct.feature" skipped="0" tests="1" time="3.731296">
+  <testcase classname="src.test.java.AddProduct" name="Send requests with multiple payloads" time="3.731296">
+    <failure message="AddProduct.feature:20 - javascript evaluation failed: karate.read('classpath:src/test/java/LoopAssertion.js')(response);, ReferenceError: &quot;Map&quot; is not defined in &lt;eval&gt; at line number 3">Given url 'https://fakestoreapi.com/' ..................................... passed
+And path 'products' ....................................................... passed
+And request {"title": "test product","price": "13.5","description": "lorem ipsum set","image": "https://i.pravatar.cc","category": "electronic"} . passed
+And headers {"Content-Type": "application/json"} .......................... passed
+When method post .......................................................... passed
+Then match response == {"id": "#number", "title": "#string", "price": "#string", "description": "#string", "image": "#string", "category": "#string"} . passed
+Then status 200 ........................................................... passed
+Then assert response.id==21 ............................................... passed
+Then assert response.title=='test product' ................................ passed
+Given url 'https://fakestoreapi.com/' ..................................... passed
+And path 'products/', 2 ................................................... passed
+And headers {"Content-Type": "application/json"} .......................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def ratings = karate.read('classpath:src/test/java/LoopAssertion.js')(response); . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: AddProduct.feature:20 - javascript evaluation failed: karate.read('classpath:src/test/java/LoopAssertion.js')(response);, ReferenceError: "Map" is not defined in &lt;eval&gt; at line number 3
+	at ✽.* def ratings = karate.read('classpath:src/test/java/LoopAssertion.js')(response); (AddProduct.feature:20)
+
+And print ratings ......................................................... skipped</failure>
+  </testcase>
+</testsuite>
