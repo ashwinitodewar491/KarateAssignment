@@ -1,4 +1,4 @@
-11:25:00.895 request:
+11:42:22.061 request:
 1 > POST https://fakestoreapi.com/products
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -8,24 +8,24 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/13.0.2)
 {"title":"test product","price":"13.5","description":"lorem ipsum set","image":"https://i.pravatar.cc","category":"electronic"}
 
-11:25:03.027 response time in milliseconds: 2125.38
+11:42:23.098 response time in milliseconds: 1030.73
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 7de3adb5c8e140ca-SIN
+1 < CF-RAY: 7de3c71bab59493b-SIN
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 28 Jun 2023 05:55:03 GMT
+1 < Date: Wed, 28 Jun 2023 06:12:23 GMT
 1 < Etag: W/"87-iCArUmJTAA0ty57H7R6gAg8CRR8"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ovlIyLHiVAfH%2FMDGs9jT10hBdVMpR2Zzop0bVIEk73O%2FaAaPOFjgM%2Bg9z9aQ8OiEIwT7E0XkbBMnAYIybNTRi%2Fwn7d4QeRRFAJod%2BiTvFQT%2FZdTijnojBeY7KdECUN3kUFfR"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ewZqw0G8eRq6zZcIHPuH3h5VXcVDLL%2BJHp%2Bxt92AYRoVQIEVTKNzu9LCXeNFj3xRM7%2BEBaN%2BgAL4iYebmfRZcXumVzjfJXvmQSfWaJPeDC30GpvozP59KOXBJKgjpEQ80hPa"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Transfer-Encoding: chunked
 1 < X-Powered-By: Express
 1 < alt-svc: h3=":443"; ma=86400
 {"id":21,"title":"test product","price":"13.5","description":"lorem ipsum set","image":"https://i.pravatar.cc","category":"electronic"}
 
-11:25:03.091 request:
+11:42:23.160 request:
 2 > GET https://fakestoreapi.com/products/2
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
@@ -33,22 +33,24 @@
 2 > Host: fakestoreapi.com
 2 > User-Agent: Apache-HttpClient/4.5.11 (Java/13.0.2)
 
-11:25:04.356 response time in milliseconds: 1263.32
+11:42:23.924 response time in milliseconds: 762.07
 2 < 200
 2 < Access-Control-Allow-Origin: *
 2 < CF-Cache-Status: DYNAMIC
-2 < CF-RAY: 7de3adbfbad44044-SIN
+2 < CF-RAY: 7de3c7217bfc3d83-SIN
 2 < Connection: keep-alive
 2 < Content-Type: application/json; charset=utf-8
-2 < Date: Wed, 28 Jun 2023 05:55:04 GMT
+2 < Date: Wed, 28 Jun 2023 06:12:24 GMT
 2 < Etag: W/"239-bLDSJo+O3FjSlzUr879oE3z3US8"
 2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=D5DIp%2FEJFm%2BSt0%2FNG%2FJwHKYFbnpl92WrLBPjtbrBsnEXPJ2LZ6k8g47%2BhM2HvXnrLSiXofk%2F6nnU%2Fv7SBRCYHB10S8x4jr0tGBxX9IroHf46iy2%2FxTRhh%2FAsMBv7FbN5L2jr"}],"group":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=87tSyQMwV6cQj2Xtko1Q%2BcmA4qj766mjo8Ch1teJdO4Im6e7B8skPrMpOTrUHGik%2BpDhsCP%2BAr3LfVKiKQ%2FcQu4UR%2FuZc8WZZfuMw5Y50cvDuB%2BPCM0crmeQrjH%2FnmGxgkoN"}],"group":"cf-nel","max_age":604800}
 2 < Server: cloudflare
 2 < Transfer-Encoding: chunked
 2 < X-Powered-By: Express
 2 < alt-svc: h3=":443"; ma=86400
 {"id":2,"title":"Mens Casual Premium Slim Fit T-Shirts ","price":22.3,"description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.","category":"men's clothing","image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg","rating":{"rate":4.1,"count":259}}
+
+":259}}
 
  failed: assert evaluated to false: response.rating.rate=4.1
 '259'
