@@ -1,2 +1,2 @@
-Testname,request,headers,responseSchema
-Send requests with multiple payloads,"{""title"": ""test product"",""price"": ""13.5"",""description"": ""lorem ipsum set"",""image"": ""https://i.pravatar.cc"",""category"": ""electronic""}","{""Content-Type"": ""application/json""}","{""id"": ""#number"", ""title"": ""#string"", ""price"": ""#string"", ""description"": ""#string"", ""image"": ""#string"", ""category"": ""#string""}"
+baseUrl,Testname,Testdata,request,headers,responseSchema
+https://fakestoreapi.com/,Send requests with multiple payloads,2,"{""title"": ""test product"",""price"": ""13.5"",""description"": ""lorem ipsum set"",""image"": ""https://i.pravatar.cc"",""category"": ""electronic""}","{""Content-Type"": ""application/json""}","{""id"": ""#number"", ""title"": ""#string"", ""price"": ""#string"", ""description"": ""#string"", ""image"": ""#string"", ""category"": ""#string""}"

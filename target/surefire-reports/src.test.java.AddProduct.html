@@ -173,25 +173,25 @@
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Given url 'https://fakestoreapi.com/'</div>
-                    <div class="time-cell passed">0.005774</div>
+                    <div class="time-cell passed">0.008193</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">And path 'products'</div>
-                    <div class="time-cell passed">0.002997</div>
+                    <div class="time-cell passed">0.003742</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">And request {"title": "test product","price": "13.5","description": "lorem ipsum set","image": "https://i.pravatar.cc","category": "electronic"}</div>
-                    <div class="time-cell passed">0.000376</div>
+                    <div class="time-cell passed">0.000303</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">And headers {"Content-Type": "application/json"}</div>
-                    <div class="time-cell passed">0.000313</div>
+                    <div class="time-cell passed">0.000263</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">When method post</div>
-                    <div class="time-cell passed">1.554674</div>
+                    <div class="time-cell passed">1.189592</div>
                 </div>
-                <div class="preformatted">13:19:30.231 request:
+                <div class="preformatted">16:58:46.316 request:
 1 &gt; POST https://fakestoreapi.com/products
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -201,17 +201,17 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/13.0.2)
 {"title":"test product","price":"13.5","description":"lorem ipsum set","image":"https://i.pravatar.cc","category":"electronic"}
 
-13:19:31.543 response time in milliseconds: 1306.75
+16:58:47.275 response time in milliseconds: 953.80
 1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 7de455652daf89a7-SIN
+1 &lt; CF-RAY: 7de59694293c448f-SIN
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Wed, 28 Jun 2023 07:49:31 GMT
+1 &lt; Date: Wed, 28 Jun 2023 11:28:47 GMT
 1 &lt; Etag: W/"87-iCArUmJTAA0ty57H7R6gAg8CRR8"
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=B8uI6BmRF6f46UoIFOS9K7XjBRAb9OO9cx75NR5kQrt3rxnTCmtKj4hGaTJXU8TPZhy7jNE5%2F0mb8vz4FQM7RrL0UmWsp1zEpal9VVGRisILWrk1egRPYUoZpq92sbfYfkgG"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BrceqJqpoBN0wo1jeN68yW8iE5MvJ5ZRGuJrewuqAvdV2bdOXxRDCo8Gu8DI3yViRBpr%2F7nFKpQUaxc5MbFokFGgM6MWrjJehYz4Kwg2JU9WXgMRkEHxbkZGDQ47XHX7T51n"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Transfer-Encoding: chunked
 1 &lt; X-Powered-By: Express
@@ -219,37 +219,37 @@
 {"id":21,"title":"test product","price":"13.5","description":"lorem ipsum set","image":"https://i.pravatar.cc","category":"electronic"}</div>
                 <div class="step-row">
                     <div class="step-cell passed">Then match response == {"id": "#number", "title": "#string", "price": "#string", "description": "#string", "image": "#string", "category": "#string"}</div>
-                    <div class="time-cell passed">0.003624</div>
+                    <div class="time-cell passed">0.023603</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Then status 200</div>
-                    <div class="time-cell passed">0.000038</div>
+                    <div class="time-cell passed">0.000045</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Then assert response.id==21</div>
-                    <div class="time-cell passed">0.030522</div>
+                    <div class="time-cell passed">0.031387</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Then assert response.title=='test product'</div>
-                    <div class="time-cell passed">0.017567</div>
+                    <div class="time-cell passed">0.015729</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Given url 'https://fakestoreapi.com/'</div>
-                    <div class="time-cell passed">0.00014</div>
+                    <div class="time-cell passed">0.000162</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">And path 'products/', 2</div>
-                    <div class="time-cell passed">0.00494</div>
+                    <div class="time-cell passed">0.005537</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">And headers {"Content-Type": "application/json"}</div>
-                    <div class="time-cell passed">0.000264</div>
+                    <div class="time-cell passed">0.000429</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">When method get</div>
-                    <div class="time-cell passed">0.716618</div>
+                    <div class="time-cell passed">0.727293</div>
                 </div>
-                <div class="preformatted">13:19:31.605 request:
+                <div class="preformatted">16:58:47.357 request:
 2 &gt; GET https://fakestoreapi.com/products/2
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
@@ -257,17 +257,17 @@
 2 &gt; Host: fakestoreapi.com
 2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/13.0.2)
 
-13:19:32.320 response time in milliseconds: 712.93
+16:58:48.082 response time in milliseconds: 723.54
 2 &lt; 200
 2 &lt; Access-Control-Allow-Origin: *
 2 &lt; CF-Cache-Status: DYNAMIC
-2 &lt; CF-RAY: 7de4556a7b524957-SIN
+2 &lt; CF-RAY: 7de5969948df40e8-SIN
 2 &lt; Connection: keep-alive
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Wed, 28 Jun 2023 07:49:32 GMT
+2 &lt; Date: Wed, 28 Jun 2023 11:28:48 GMT
 2 &lt; Etag: W/"239-bLDSJo+O3FjSlzUr879oE3z3US8"
 2 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LjT2a9uNJveLZNy2bmUwVeLQA4xJsUD%2BK4cLni2O3kPjadUygr32Eb1TBSgICCe9KvGEvMxhIAwfTx0O8RceIx48Q7Xyc6A360mHSSchCrgbwP4d6VQs4qchiypjXlB%2F%2BDi1"}],"group":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9lSdptSnxTh8z99Q6GYBzNXvwd5vqnBs6sA3fokl0i6o1%2FNr8PlIjbwE%2Fdocvb8%2Frgb9xJHFR8N3nyDn415s25c5rtX6eff4lWJlDemMluEhv09JZSGsrIoVk1xX0dXIM0Td"}],"group":"cf-nel","max_age":604800}
 2 &lt; Server: cloudflare
 2 &lt; Transfer-Encoding: chunked
 2 &lt; X-Powered-By: Express
@@ -275,39 +275,24 @@
 {"id":2,"title":"Mens Casual Premium Slim Fit T-Shirts ","price":22.3,"description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight &amp; soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.","category":"men's clothing","image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg","rating":{"rate":4.1,"count":259}}</div>
                 <div class="step-row">
                     <div class="step-cell passed">Then status 200</div>
-                    <div class="time-cell passed">0.000021</div>
+                    <div class="time-cell passed">0.000022</div>
                 </div>
                 <div class="step-row">
-                    <div class="step-cell failed">Then assert karate.read('classpath:src/test/java/LoopAssertion.js')(response);</div>
-                    <div class="time-cell failed">0.030553</div>
+                    <div class="step-cell passed">* def ResponseValidatorFunction = karate.read('classpath:src/test/java/ResponseValidator.js')</div>
+                    <div class="time-cell passed">0.027076</div>
                 </div>
-                <div class="preformatted">AddProduct.feature:21 - javascript evaluation failed: karate.read('classpath:src/test/java/LoopAssertion.js')(response);, javascript evaluation failed: function(response){        
-var m1 = new Map();
-m1.set("rate", 4.1);
-m1.set("count", 259);
-console.log(m1);
-var result=new Map(Object.entries(JSON.parse(response.rating)));
-console.log(result);
-function compareMaps(m1, result) {
-  if (m1.size !== result.size) {
-    return false;
-  }
-  
-  for (const [key, value] of m1.entries()) {
-    if (!result.has(key) || result.get(key) !== value) {
-      return false;
-    }
-  }
-  
-  return true;
-}
-return result;
-}, &lt;eval&gt;:13:7 Expected an operand but found const
-  for (const [key, value] of m1.entries()) {
-       ^ in &lt;eval&gt; at line number 13 at column number 7</div>
                 <div class="step-row">
-                    <div class="step-cell skipped">And print ratings</div>
-                    <div class="time-cell skipped">0</div>
+                    <div class="step-cell passed">* def responseAssertionsResults = ResponseValidatorFunction(response,{'expRate':4.1,'expCount':259})</div>
+                    <div class="time-cell passed">0.041986</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* print responseAssertionsResults</div>
+                    <div class="time-cell passed">0.000283</div>
+                </div>
+                <div class="preformatted">16:58:48.153 [print] true</div>
+                <div class="step-row">
+                    <div class="step-cell passed">Then assert responseAssertionsResults</div>
+                    <div class="time-cell passed">0.002917</div>
                 </div>
             </div>
         </div>

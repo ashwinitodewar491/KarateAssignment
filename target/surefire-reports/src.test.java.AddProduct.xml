@@ -1,6 +1,6 @@
-<testsuite failures="1" name="src/test/java/AddProduct.feature" skipped="0" tests="1" time="2.368422">
-  <testcase classname="src.test.java.AddProduct" name="Send requests with multiple payloads" time="2.368422">
-    <failure message="AddProduct.feature:21 - javascript evaluation failed: karate.read('classpath:src/test/java/LoopAssertion.js')(response);, javascript evaluation failed: function(response){        &#10;var m1 = new Map();&#10;m1.set(&quot;rate&quot;, 4.1);&#10;m1.set(&quot;count&quot;, 259);&#10;console.log(m1);&#10;var result=new Map(Object.entries(JSON.parse(response.rating)));&#10;console.log(result);&#10;function compareMaps(m1, result) {&#10;  if (m1.size !== result.size) {&#10;    return false;&#10;  }&#10;  &#10;  for (const [key, value] of m1.entries()) {&#10;    if (!result.has(key) || result.get(key) !== value) {&#10;      return false;&#10;    }&#10;  }&#10;  &#10;  return true;&#10;}&#10;return result;&#10;}, &lt;eval&gt;:13:7 Expected an operand but found const&#10;  for (const [key, value] of m1.entries()) {&#10;       ^ in &lt;eval&gt; at line number 13 at column number 7">Given url 'https://fakestoreapi.com/' ..................................... passed
+<testsuite failures="0" name="src/test/java/AddProduct.feature" skipped="0" tests="1" time="2.078561">
+  <testcase classname="src.test.java.AddProduct" name="Send requests with multiple payloads" time="2.078561">
+    <system-out>Given url 'https://fakestoreapi.com/' ..................................... passed
 And path 'products' ....................................................... passed
 And request {"title": "test product","price": "13.5","description": "lorem ipsum set","image": "https://i.pravatar.cc","category": "electronic"} . passed
 And headers {"Content-Type": "application/json"} .......................... passed
@@ -14,35 +14,9 @@ And path 'products/', 2 ................................................... pass
 And headers {"Content-Type": "application/json"} .......................... passed
 When method get ........................................................... passed
 Then status 200 ........................................................... passed
-Then assert karate.read('classpath:src/test/java/LoopAssertion.js')(response); . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: AddProduct.feature:21 - javascript evaluation failed: karate.read('classpath:src/test/java/LoopAssertion.js')(response);, javascript evaluation failed: function(response){        
-var m1 = new Map();
-m1.set("rate", 4.1);
-m1.set("count", 259);
-console.log(m1);
-var result=new Map(Object.entries(JSON.parse(response.rating)));
-console.log(result);
-function compareMaps(m1, result) {
-  if (m1.size !== result.size) {
-    return false;
-  }
-  
-  for (const [key, value] of m1.entries()) {
-    if (!result.has(key) || result.get(key) !== value) {
-      return false;
-    }
-  }
-  
-  return true;
-}
-return result;
-}, &lt;eval&gt;:13:7 Expected an operand but found const
-  for (const [key, value] of m1.entries()) {
-       ^ in &lt;eval&gt; at line number 13 at column number 7
-	at ✽.Then assert karate.read('classpath:src/test/java/LoopAssertion.js')(response); (AddProduct.feature:21)
-
-And print ratings ......................................................... skipped</failure>
+* def ResponseValidatorFunction = karate.read('classpath:src/test/java/ResponseValidator.js') . passed
+* def responseAssertionsResults = ResponseValidatorFunction(response,{'expRate':4.1,'expCount':259}) . passed
+* print responseAssertionsResults ......................................... passed
+Then assert responseAssertionsResults ..................................... passed</system-out>
   </testcase>
 </testsuite>
