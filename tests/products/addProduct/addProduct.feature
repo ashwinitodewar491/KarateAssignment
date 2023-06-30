@@ -11,13 +11,13 @@ Feature: Adding product
     Then assert response.id==21
     Then assert response.title=='test product'
     
-   #Verify data
+    #Verify data
    Given url 'https://fakestoreapi.com/'
    And path 'products/', <Testdata>
-   And headers <headers>
+   And headers <headers>	
    When method get
    Then status 200
-   * def ResponseValidatorFunction = karate.read('classpath:src/test/java/ResponseValidator.js')
+   * def ResponseValidatorFunction = karate.read('../responseValidator.js')
    * def responseAssertionsResults = ResponseValidatorFunction(response,{'expRate':4.1,'expCount':259})
    * print responseAssertionsResults
    Then assert responseAssertionsResults
@@ -30,5 +30,5 @@ Feature: Adding product
 
 
     Examples:
-  	| read('classpath:src/test/resources/create.csv') |
+  	| read('testDataForCreatingData.csv') |
     

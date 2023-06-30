@@ -1,0 +1,2 @@
+baseUrl,Testname,Testdata,request,headers,responseSchema,updatedRequest
+https://restful-booker.herokuapp.com/,Create booking end to end test case,,"{""firstname"": ""Jimmy"", ""lastname"": ""Brown"", ""totalprice"": 111, ""depositpaid"": true, ""bookingdates"": {""checkin"": ""2018-01-01"", ""checkout"": ""2019-01-01""}, ""additionalneeds"": ""Breakfast""}",,,"{""firstname"": ""James"", ""lastname"": ""Brown"", ""totalprice"": 111, ""depositpaid"": true, ""bookingdates"": {""checkin"": ""2018-01-01"", ""checkout"": ""2019-01-01""}, ""additionalneeds"": ""Breakfast""}"
